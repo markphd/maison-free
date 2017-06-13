@@ -41,7 +41,7 @@ ul, ol {
      -o-user-select: none;
      user-select: none;
      z-index: 1;
-     height: 765px;
+     height: 100vh;
 }
 
 .frame {
@@ -64,7 +64,7 @@ ul, ol {
 .frame li {
     display: inline-block;
     font-family: 'Source Sans Pro', sans-serif;
-    height: 765px;
+    height: 100vh;
     font-size: 15px;
     line-height: 30px;
     background: #2E435A;
@@ -75,7 +75,7 @@ ul, ol {
 #slide-1{
   background-image: url('../images/slider.png');
   background-repeat: no-repeat;
-  background-position: 20% center;
+  background-position: 20% 1%;
   background-color: #f5f5f5;
 }
 
@@ -97,6 +97,12 @@ ul, ol {
 
 .next svg, .prev svg {
     width: 25px;
+}
+
+#slider-index {
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
 }
 
 
