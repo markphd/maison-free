@@ -2,9 +2,48 @@ head
 	link(href="dist/css/main.css" rel="stylesheet")
 body
 	header
-		h1 Hello world!
-		p This is a paragraph
+		h1.logo ◭
+		nav
+			ul.nav-desktop__list
+				li.nav-desktop__list-item
+					a.nav-desktop__list-link(href="#") Home
+				li.nav-desktop__list-item
+					a.nav-desktop__list-link(href="#") Shop
+				li.nav-desktop__list-item
+					a.nav-desktop__list-link(href="#") Journal
+				li.nav-desktop__list-item
+					a.nav-desktop__list-link(href="#") Elements
+				li.nav-desktop__list-item
+					a.nav-desktop__list-link(href="#") Pages
+				li.nav-desktop__list-item
+					a.nav-desktop__list-link(href="#") ⊚
+		.slider.js_slider
+			.frame.js_frame
+				ul.slides.js_slides
+					li#slide-1.js_slide
+						.slide-content
+							p.headline Sky Planet
+							p.subhead Shop Now
+					li#slide-2.js_slide
+						.slide-content
+							p.headline Alice Blue
+							p.subhead Shop Now
+					li#slide-3.js_slide
+						.slide-content
+							p.headline Hot Pink
+							p.subhead Shop Now
+			span.js_prev.prev
+				svg(xmlns='http://www.w3.org/2000/svg', width='50', height='50', viewbox='0 0 501.5 501.5')
+					g
+						path(fill='#333', d='M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z')
+			span.js_next.next
+				svg(xmlns='http://www.w3.org/2000/svg', width='50', height='50', viewbox='0 0 501.5 501.5')
+					g
+						path(fill='#333', d='M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z')
+			span#slider-index
 	main
+
 	
+	script(src="dist/scripts/lib/lory.min.js")
 	script(src="dist/scripts/main.js")
 	footer

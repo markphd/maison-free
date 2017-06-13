@@ -1,6 +1,6 @@
 // PRIMARY STYLE 
 
-*, *::after, *::before {
+*, *::aftebodyr, *::before {
   box-sizing: border-box;
 }
 
@@ -15,7 +15,6 @@ body {
   color: #444444;
   background-color: #ffffff;
   margin: 0;
-  padding: 0;
 }
 
 ul, ol {
@@ -25,3 +24,126 @@ ul, ol {
 }
 
 // END PRIMARY STYLE 
+
+// LORY SLIDER CSS
+
+
+/**
+ * (optional) define here the style definitions which should be applied on the slider container
+ * e.g. width including further controls like arrows etc.
+ */
+.slider {
+  position: relative;
+     margin: 0 auto;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: -moz-none;
+     -o-user-select: none;
+     user-select: none;
+     z-index: 1;
+     height: 765px;
+}
+
+.frame {
+    /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+  display: inline-block;
+}
+
+.frame li {
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 765px;
+    font-size: 15px;
+    line-height: 30px;
+    background: #2E435A;
+    color: #333;
+    width: 100vw;
+}
+
+#slide-1{
+  background-image: url('../images/slider.png');
+  background-repeat: no-repeat;
+  background-position: 20% center;
+  background-color: #f5f5f5;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+}
+
+.next {
+    right: 3%;
+}
+
+.prev {
+    left: 3%;
+}
+
+.next svg, .prev svg {
+    width: 25px;
+}
+
+
+// END OF LORY SLIDER
+
+.logo {
+  position: absolute;
+  z-index: 9;
+  color: #333;
+  font-size: 2.5em;
+  line-height: 10px;
+  left: 3%;
+  top: 3%;
+}
+
+nav {
+  padding: 3% 5%;
+  margin: 0;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+}
+
+.nav-desktop__list {
+  max-width: 400px;
+}
+
+.nav-desktop__list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.slide-content {
+  position: relative;
+  top: 45%;
+  left: 50%;
+}
+
+p.headline, p.subhead {
+  margin: 15px;
+  padding: 0;
+}
+
+.headline {
+  font-size: 2.5em;
+}
+
+.subhead {
+  font-size: 1.5em;
+}

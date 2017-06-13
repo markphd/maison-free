@@ -21,7 +21,7 @@ gulp.task('templates', function(){
 })
 
 gulp.task('images', function(){
-	gulp.src(['src/images/**/*'])
+	gulp.src(['src/img/**/*'])
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
 		.pipe(browserSync.stream());

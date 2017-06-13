@@ -1,4 +1,4 @@
-# ◈
+# [Maison](https://dribbble.com/shots/3547714-MAISON-FREE-Minimalist-eCommerce-PSD-Template) - Designed by Igor Ten
 
 ### Local-dev
 1. Install dependencies via `npm install` 
@@ -11,7 +11,7 @@
 * [Browser-sync](https://www.npmjs.com/package/browser-sync) - Live CSS Reload & Browser Syncing
 
 ### To-do
-    ✔ - Item 1
-    ✔ - Item 2
-    ❑ - Item 3
-    ❑ - Item 4
+    ✔ - Structure header
+    ✔ - Use lory.js for slides
+    ❑ - Implement slide count (e.g. 1 of 3)
+    ❑ - Use flexible grid
