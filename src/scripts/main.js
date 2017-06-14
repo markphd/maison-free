@@ -14,19 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
  		console.log(this.className);
     	this.className === "js_prev prev" ? --index : ++index
     	if (index == 0) {
-    		index = 3;
-    	} else if (index > 3){
+    		index = slideCount;
+    	} else if (index > slideCount){
     		index = 1;
     	}
     	console.log(index);
-    	sliderIndex.innerHTML = index + ' of ' + slideCount;
+    	sliderIndex.innerHTML = index + '<span style="font-style: italic; margin: 0 3px;"> of </span>' + slideCount;
     }
 
-    // prev[0].addEventListener('click', indexCounter);
-    // next[0].addEventListener('click', indexCounter);
+    prev[0].addEventListener('click', indexCounter);
+    next[0].addEventListener('click', indexCounter);
 
     if (!index == 0) {
-    	sliderIndex.insertAdjacentHTML('afterbegin', index + ' of ' + slideCount);
+    	sliderIndex.insertAdjacentHTML('afterbegin', index + '<span style="font-style: italic; margin: 0 3px;"> of </span>' + slideCount);
     }
 
 
@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(slideCount);
 
     lory(slider, {
-        infinite: 0
+        infinite: 1
     });
 });

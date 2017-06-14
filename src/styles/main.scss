@@ -23,6 +23,15 @@ ul, ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 // END PRIMARY STYLE 
 
 // LORY SLIDER CSS
@@ -73,10 +82,17 @@ ul, ol {
 }
 
 #slide-1{
-  background-image: url('../images/slider.png');
+  background-image: url('../images/slider-1.png');
   background-repeat: no-repeat;
   background-position: 20% 1%;
   background-color: #f5f5f5;
+}
+
+#slide-2{
+  background-image: url('../images/slider-2.png');
+  background-repeat: no-repeat;
+  background-position: 20% 1%;
+  background-color: #efefef;
 }
 
 .prev, .next {
@@ -142,14 +158,17 @@ nav {
 }
 
 p.headline, p.subhead {
-  margin: 15px;
+  margin: 1% 0;
   padding: 0;
 }
 
 .headline {
   font-size: 2.5em;
+  letter-spacing: 5px;
 }
 
 .subhead {
+  letter-spacing: 2px;
   font-size: 1.5em;
+  color: #777;
 }
