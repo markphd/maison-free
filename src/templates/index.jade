@@ -1,4 +1,5 @@
 head
+	link(href="//unpkg.com/tachyons@4.6.1/css/tachyons.min.css" rel="stylesheet")
 	link(href="dist/css/main.css" rel="stylesheet")
 body
 	header
@@ -16,7 +17,7 @@ body
 				li.nav-desktop__list-item
 					a.nav-desktop__list-link(href="#") Pages
 				li.nav-desktop__list-item
-					a.nav-desktop__list-link(href="#") ⊚
+					a.nav-desktop__list-link(href="#") <svg height="1.3em" style="margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999"><path d="M214.685 402.828c-24.83 0-45.03 20.2-45.03 45.03 0 24.828 20.2 45.028 45.03 45.028s45.03-20.2 45.03-45.03c-.002-24.828-20.202-45.028-45.03-45.028zm0 64.914c-10.966 0-19.887-8.922-19.887-19.887 0-10.966 8.922-19.887 19.887-19.887s19.887 8.922 19.887 19.887c0 10.967-8.922 19.887-19.887 19.887zM372.63 402.828c-24.83 0-45.03 20.2-45.03 45.03 0 24.828 20.2 45.028 45.03 45.028s45.03-20.2 45.03-45.03c-.002-24.828-20.202-45.028-45.03-45.028zm0 64.914c-10.966 0-19.887-8.922-19.887-19.887 0-10.966 8.922-19.887 19.887-19.887 10.966 0 19.887 8.922 19.887 19.887 0 10.967-8.922 19.887-19.887 19.887zM383.716 165.755h-180.15c-6.942 0-12.57 5.628-12.57 12.57 0 6.944 5.63 12.572 12.57 12.572h180.15c6.943 0 12.57-5.628 12.57-12.57 0-6.945-5.627-12.572-12.57-12.572zM373.91 231.035H213.374c-6.943 0-12.57 5.628-12.57 12.57s5.627 12.572 12.57 12.572H373.91c6.943 0 12.57-5.628 12.57-12.57 0-6.943-5.627-12.572-12.57-12.572z"/><path d="M506.34 109.744c-4.793-5.884-11.897-9.258-19.488-9.258H95.278l-7.908-38.39c-1.65-8.007-7.113-14.73-14.614-17.988L17.58 20.158c-6.37-2.767-13.774.156-16.537 6.524-2.766 6.37.157 13.774 6.524 16.537l55.178 23.95 60.826 295.26c2.397 11.63 12.753 20.07 24.626 20.07h301.166c6.943 0 12.57-5.63 12.57-12.572 0-6.943-5.627-12.57-12.57-12.57H148.197l-7.4-35.917H451.69c11.872 0 22.23-8.44 24.624-20.067l35.163-170.675c1.53-7.432-.34-15.07-5.136-20.954zM451.69 296.3H135.62l-35.162-170.673H486.85l-35.16 170.674z"/></svg>
 		.slider.js_slider
 			.frame.js_frame
 				ul.slides.js_slides
@@ -39,9 +40,84 @@ body
 					g
 						path(fill='#333', d='M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z')
 			span#slider-index
-	main
+	main.ph6-ns.w-100.pv6
+		aside.fl.w-20
+			.control
+				p.f2.tracked.pb1 Categories
+				ul.control-category.mb6
+					li.category-item.pv2 All Products <sup>23</sup>
+					li.category-item.pv2 Living <sup>23</sup>
+					li.category-item.pv2 Dining <sup>23</sup>
+					li.category-item.pv2 Furniture <sup>23</sup>
+					li.category-item.pv2 Lighting <sup>23</sup>
+					li.category-item.pv2 Technics <sup>23</sup>
+					li.category-item.pv2 Accessories <sup>23</sup>
+					hr.mt4
+				p.f2.tracked.pb1 Filter By
+				.sub-control
+					p.f3.b Price
+					input(type="range")
+					//- span.fl.label min
+					//- span.fr.label max
+					input(type="text" placeholder="30")
+					input(type="text" placeholder="100")
+					button Filter
+				.sub-control
+					p.f3.b Color
+					.color-picker
+						input(type="color" value="#c7c7c7")
+					.color-picker
+						input(type="color" value="#ffffff")
+					.color-picker
+						input(type="color" value="#b2e6fe")
+					.color-picker
+						input(type="color" value="#beffc9")
+					.color-picker
+						input(type="color" value="#ed6868")
+					//- span.fl.label min
+					//- span.fr.label max
+				.sub-control
+					p.f3.b Size
+					ul.control-category
+						li.category-item.pv2 Small <sup>23</sup>
+						li.category-item.pv2 Medium <sup>23</sup>
+						li.category-item.pv2 Large <sup>23</sup>
+				.sub-control
+					p.f3.b Brands
+					ul.control-category
+						li.category-item.pv2 Banshu Hamono <sup>23</sup>
+						li.category-item.pv2 Bower <sup>23</sup>
+						li.category-item.pv2 Braun <sup>23</sup>
+						li.category-item.pv2 Elevenplus <sup>23</sup>
+						li.category-item.pv2 Field <sup>23</sup>
+						li.category-item.pv2 Henry Wilson <sup>23</sup>
+						li.category-item.pv2 Menu <sup>23</sup>
+					hr.mt4
+				p.f2.tracked.pb1 Popular Tags
+				p.category-item Black, White, Simple, Furniture, Accessories, Minimalism, Modern 
 
-	
+		//- 	p 
+		//- 		| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+		//- 		| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		//- 		| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		//- 		| consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		//- 		| cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		//- 		| proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+		//- section.fl.w-two-thirds
+		//- 	p 
+		//- 		| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+		//- 		| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		//- 		| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		//- 		| consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		//- 		| cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		//- 		| proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+		//- 	p 
+		//- 		| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+		//- 		| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		//- 		| quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		//- 		| consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		//- 		| cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		//- 		| proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
 	script(src="//cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.1/lory.min.js")
 	script(src="dist/scripts/main.js")
 	footer

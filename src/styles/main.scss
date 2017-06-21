@@ -1,4 +1,4 @@
-// PRIMARY STYLE 
+/*PRIMARY STYLE */
 
 *, *::aftebodyr, *::before {
   box-sizing: border-box;
@@ -31,12 +31,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-// END PRIMARY STYLE 
-
-// LORY SLIDER CSS
+/*END PRIMARY STYLE */
 
 
+/*LORY SLIDER CSS*/
 /**
  * (optional) define here the style definitions which should be applied on the slider container
  * e.g. width including further controls like arrows etc.
@@ -122,7 +120,7 @@ a:hover {
 }
 
 
-// END OF LORY SLIDER
+/*END OF LORY SLIDER*/
 
 .logo {
   position: absolute;
@@ -171,4 +169,79 @@ p.headline, p.subhead {
   letter-spacing: 2px;
   font-size: 1.5em;
   color: #777;
+}
+
+
+/*CONTROL CATEGORY*/
+
+hr { background-color: #b2b2b2; border: 0; height: 1px; }
+
+.category-item {
+  font-size: 1em;
+  line-height: 2em;
+  color: #999;
+}
+
+.category-item sup {
+  font-family: 'Source Code Pro', sans-serif;
+  color: #aaa;
+}
+
+.label {
+  position: relative;
+  top: 20px;
+  height: 10px;
+  padding-bottom: 30px;
+}
+
+.sub-control {
+
+  margin-bottom: 2em;
+}
+
+input[type='range'] {
+  width: 80%;
+}
+
+input[type='color'] {
+  width: 200%;
+  height: 200%;
+  padding: 0;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type='text'] {
+  width: 20%;
+  border: 1px solid #ddd;
+  color: #bbb;
+  padding: 1%;
+}
+
+button {
+  width: 20%;
+  height: 27px;
+  border: 1px solid #ddd;
+  color: #777;
+  margin-left: 30px;
+}
+
+.color-picker {
+  width: 49px;
+  height: 49px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 2%;
+  display: inline-block;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+
+.control-filter {
+  /*margin-top: 60px;*/
 }

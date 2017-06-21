@@ -14,8 +14,9 @@
     ✔ - Structure header
     ✔ - Use lory.js for slides
     ✔ - Implement slide count (e.g. 1 of 3)
+    ✔ - Use Tachyons
+    ✔ - Implement sidebar
     ❑ - Use flexible grid
-    ❑ - Check Tachyons
     ❑ - Check Tesarray.js
     ❑ - Apply animation
     ❑ - Try Rellax.js
