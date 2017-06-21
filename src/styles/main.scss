@@ -41,45 +41,45 @@ a:hover {
  * (optional) define here the style definitions which should be applied on the slider container
  * e.g. width including further controls like arrows etc.
  */
-.slider {
-  position: relative;
-     margin: 0 auto;
-     -webkit-user-select: none;
-     -khtml-user-select: none;
-     -moz-user-select: -moz-none;
-     -o-user-select: none;
-     user-select: none;
-     z-index: 1;
-     height: 100vh;
-}
+// .slider {
+//   position: relative;
+//      margin: 0 auto;
+//      -webkit-user-select: none;
+//      -khtml-user-select: none;
+//      -moz-user-select: -moz-none;
+//      -o-user-select: none;
+//      user-select: none;
+//      z-index: 1;
+//      height: 100vh;
+// }
 
-.frame {
-    /**
-     * (optional) wrapper width, specifies width of the slider frame.
-     */
-    position: relative;
-    width: 100vw;
-    margin: 0 auto;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
-    white-space: nowrap;
-}
+// .frame {
+//     /**
+//      * (optional) wrapper width, specifies width of the slider frame.
+//      */
+//     position: relative;
+//     width: 100vw;
+//     margin: 0 auto;
+//     font-size: 0;
+//     line-height: 0;
+//     overflow: hidden;
+//     white-space: nowrap;
+// }
 
-.slides {
-  display: inline-block;
-}
+// .slides {
+//   display: inline-block;
+// }
 
-.frame li {
-    display: inline-block;
-    font-family: 'Source Sans Pro', sans-serif;
-    height: 100vh;
-    font-size: 15px;
-    line-height: 30px;
-    background: #2E435A;
-    color: #333;
-    width: 100vw;
-}
+// .frame li {
+//     display: inline-block;
+//     font-family: 'Source Sans Pro', sans-serif;
+//     height: 100vh;
+//     font-size: 15px;
+//     line-height: 30px;
+//     background: #2E435A;
+//     color: #333;
+//     width: 100vw;
+// }
 
 #slide-1{
   background-image: url('../images/slider-1.png');
@@ -101,6 +101,7 @@ a:hover {
     margin-top: -25px;
     display: block;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .next {
@@ -134,7 +135,7 @@ a:hover {
   top: 3%;
 }
 
-nav {
+.main-nav {
   padding: 3% 5%;
   margin: 0;
   position: absolute;
@@ -143,12 +144,12 @@ nav {
 }
 
 .nav-desktop__list {
-  max-width: 400px;
+  width: 500px;
 }
 
 .nav-desktop__list-item {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5%;
 }
 
 .slide-content {
@@ -171,4 +172,8 @@ p.headline, p.subhead {
   letter-spacing: 2px;
   font-size: 1.5em;
   color: #777;
+}
+
+header {
+  height: 100%;
 }

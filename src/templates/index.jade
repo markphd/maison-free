@@ -1,9 +1,10 @@
 head
+	link(href="/dist/css/materialize.min.css" rel="stylesheet")
 	link(href="dist/css/main.css" rel="stylesheet")
 body
 	header
 		h1.logo ◭
-		nav
+		.main-nav
 			ul.nav-desktop__list
 				li.nav-desktop__list-item
 					a.nav-desktop__list-link(href="#") Home
@@ -17,7 +18,7 @@ body
 					a.nav-desktop__list-link(href="#") Pages
 				li.nav-desktop__list-item
 					a.nav-desktop__list-link(href="#") ⊚
-		.slider.js_slider
+		//- .slider.js_slider
 			.frame.js_frame
 				ul.slides.js_slides
 					li#slide-1.js_slide
@@ -39,9 +40,39 @@ body
 					g
 						path(fill='#333', d='M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z')
 			span#slider-index
-	main
+		.slider.fullscreen
+			ul.slides
+				li#slide-1.js_slide
+					//- img(src="dist/images/slider-1.png", alt="")
+					.slide-content
+						p.headline Sky Planet
+						p.subhead
+							a(href="#") Shop Now
+				li#slide-2.js_slide
+					.slide-content
+						p.headline Alice Blue
+						p.subhead 
+							a(href="#") Shop Now
+		span.js_prev.prev
+			svg(xmlns='http://www.w3.org/2000/svg', width='50', height='50', viewbox='0 0 501.5 501.5')
+				g
+					path(fill='#333', d='M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z')
+		span.js_next.next
+			svg(xmlns='http://www.w3.org/2000/svg', width='50', height='50', viewbox='0 0 501.5 501.5')
+				g
+					path(fill='#333', d='M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z')
+		span#slider-index
 
-	
-	script(src="//cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.1/lory.min.js")
+	main
+		section.row
+			.col.s4
+				h3 CATEGORIES
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae neque magnam corporis voluptatum, ipsum numquam autem vitae sequi quam cupiditate fuga nisi nesciunt, quas porro sit, inventore culpa accusamus ipsam.
+			.col.s8
+				h1 Hello world! sdasdfa sdfas dfasdf asd fasdf asdfasdfasdfa sdf asdfasd
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae neque magnam corporis voluptatum, ipsum numquam autem vitae sequi quam cupiditate fuga nisi nesciunt, quas porro sit, inventore culpa accusamus ipsam.
+
+	script(src="dist/scripts/jquery.min.js")
+	script(src="dist/scripts/materialize.min.js")
 	script(src="dist/scripts/main.js")
 	footer
